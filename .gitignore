@@ -1,0 +1,6 @@
+.classpath
+.settings/*
+.project
+ASCII_ART.iml
+target/*
+bin/*
