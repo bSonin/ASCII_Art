@@ -1,9 +1,10 @@
 package com.bsonin.model;
 
-public interface Image {
-	int getWidth();
+public interface Image
+{
+  int getWidth();
 
-	int getHeight();
+  int getHeight();
 
-	Pixel getPixel(int x, int y);
+  Pixel getPixel(int x, int y);
 }
