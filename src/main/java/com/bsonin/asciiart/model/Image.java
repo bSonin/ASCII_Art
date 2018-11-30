@@ -1,4 +1,4 @@
-package com.bsonin.model;
+package com.bsonin.asciiart.model;
 
 public interface Image
 {

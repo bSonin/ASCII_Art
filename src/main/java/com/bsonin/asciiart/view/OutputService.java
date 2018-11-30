@@ -1,6 +1,8 @@
-package com.bsonin.model;
+package com.bsonin.asciiart.view;
 
-public class OutputUtils
+import com.bsonin.asciiart.model.AsciiArt;
+
+public class OutputService
 {
   public static void outputImage(String medium, AsciiArt asciiArt)
   {

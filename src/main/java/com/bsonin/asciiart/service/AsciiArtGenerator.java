@@ -1,12 +1,16 @@
-package com.bsonin.model;
+package com.bsonin.asciiart.service;
+
+import com.bsonin.asciiart.model.AsciiArt;
+import com.bsonin.asciiart.model.Image;
+import com.bsonin.asciiart.view.OutputService;
 
 public class AsciiArtGenerator
 {
-  private ImageUtils imageUtils;
+  private ImageService imageUtils;
 
   public AsciiArtGenerator()
   {
-    imageUtils = new ImageUtilsImplImageJ();
+    imageUtils = new ImageServiceImplImageJ();
   }
 
   public void process()
@@ -14,7 +18,7 @@ public class AsciiArtGenerator
     Image image = openImage();
     image = resizeImage(image);
     AsciiArt asciiArt = imageUtils.createAsciiArt(image);
-    OutputUtils.outputImage("CLI", asciiArt);
+    OutputService.outputImage("CLI", asciiArt);
   }
 
   public Image openImage()

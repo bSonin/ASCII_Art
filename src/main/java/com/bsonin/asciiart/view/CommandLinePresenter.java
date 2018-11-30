@@ -1,4 +1,6 @@
-package com.bsonin.model;
+package com.bsonin.asciiart.view;
+
+import com.bsonin.asciiart.model.AsciiArt;
 
 public class CommandLinePresenter implements Presenter
 {

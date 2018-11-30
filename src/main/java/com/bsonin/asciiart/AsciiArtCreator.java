@@ -1,4 +1,6 @@
-package com.bsonin.model;
+package com.bsonin.asciiart;
+
+import com.bsonin.asciiart.service.AsciiArtGenerator;
 
 public class AsciiArtCreator
 {

@@ -1,10 +1,14 @@
-package com.bsonin.model;
+package com.bsonin.asciiart.service;
+
+import com.bsonin.asciiart.model.AsciiArt;
+import com.bsonin.asciiart.model.Image;
+import com.bsonin.asciiart.model.ImageImplImageJ;
 
 import ij.IJ;
 import ij.ImagePlus;
 import ij.process.ImageProcessor;
 
-public class ImageUtilsImplImageJ implements ImageUtils
+public class ImageServiceImplImageJ implements ImageService
 {
   public Image openImage(String pathToImage)
   {
