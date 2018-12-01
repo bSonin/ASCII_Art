@@ -12,6 +12,7 @@ public class ImageServiceImplImageJ implements ImageService
 {
   public Image openImage(String pathToImage)
   {
+    // TODO:bhs - Exception handling needed here
     return new ImageImplImageJ(IJ.openImage(pathToImage));
   }
 

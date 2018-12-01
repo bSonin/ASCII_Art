@@ -23,6 +23,7 @@ public class AsciiArtGenerator
 
   public Image openImage()
   {
+    // FIXME:bhs - Image/path should come from command line
     return imageUtils.openImage("/Users/benjaminsonin/Desktop/test_pic.jpg");
   }
 
