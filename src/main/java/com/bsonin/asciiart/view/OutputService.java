@@ -10,8 +10,17 @@ public class OutputService
     presenter.presentAsciiArt(asciiArt);
   }
 
-  private static Presenter getPresenter(String medium)
+  protected static Presenter getPresenter(String medium)
   {
-    return (Presenter) new CommandLinePresenter();
+    // TODO:bhs - Make valid mediums into enumeration
+    // TODO:bhs - what if medium null - Never should be...
+    switch (medium.toLowerCase()) {
+      case "cli":
+        return (Presenter) new CommandLinePresenter();
+      default:
+        // TODO:bhs - reasonable practice?
+        throw new IllegalArgumentException("Invalid medium");
+    }
+
   }
 }

@@ -19,6 +19,7 @@ public class AsciiArt
     }
   }
 
+  // TODO:bhs - add tests
   public char getCharacter(int x, int y)
   {
     if (!MathUtils.isNegative(x) && !MathUtils.isNegative(y))
@@ -28,6 +29,7 @@ public class AsciiArt
     throw new AsciiArtIndexException("Invalid AsciiArt grid location");
   }
 
+  // TODO:bhs - add tests
   public void setCharacter(int x, int y, char character)
   {
     if (!MathUtils.isNegative(x) && !MathUtils.isNegative(y))

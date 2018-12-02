@@ -15,6 +15,7 @@ public class AsciiArtGenerator
 
   public void process()
   {
+    // TODO:bhs - Exception handling here
     Image image = openImage();
     image = resizeImage(image);
     AsciiArt asciiArt = imageUtils.createAsciiArt(image);
